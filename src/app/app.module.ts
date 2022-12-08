@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    LandingPageComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
