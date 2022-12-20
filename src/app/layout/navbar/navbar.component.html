@@ -1,19 +1,55 @@
-<nav >
+<nav>
     <div style="display: flex; justify-content: space-between;">
 
       <div class="col-3 left">
-        <img src="../../../assets/images/logo.png" alt="" height="85px">
+        <a href=""> <img id="logo" src="../../../assets/images/logo.png" alt="" height="85px"></a>
       </div>
       <div class="col-7 right">
         <ul style="display: flex; list-style:none; text-decoration:none;">
           <li><a href="">HOME</a></li>
           <li><a routerLink="about">ABOUT US</a></li>
-          <li><a href="">CONTACT US</a></li>
+          <li><a href="#contactus">CONTACT US</a></li>
           <li style="margin-left: 70px;"> <img src="../../../assets/images/fb.png" alt=""> </li>
-          <li> <img src="../../../assets/images/ig.png" alt=""> </li>
+          <li> <a href="https://www.instagram.com/commerce_fields_/"> <img src="../../../assets/images/ig.png" alt=""> </a></li>
           <li> <img src="../../../assets/images/tw.png" alt=""> </li>
         </ul>
       </div>
-
+      <div style="display: flex; align-items: center;">
+        <div  [@burgerMenu]='state' id="menu" [ngClass]=" straight ? 'straight' : 'angled' ">
+        <span  (click)="openClose()" style="z-index:3 !important">
+          <hr id="line1" class="line" [ngStyle]="{ background: color}" style="opacity: 1;">
+          <hr id="line2" class="line" [ngStyle]="{ background: color}" >
+          <hr id="line3" class="line" [ngStyle]="{ background: color}" style="opacity: 1;">
+        </span>
+        <div id="glass" class="glass-menu" [ngStyle]="{ display: display}">
+          <div>
+            <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
+              <hr style="width: 25px; height: 2px; color: #0E153A;">
+              <h4 style="color: #236589; letter-spacing: 1.5px; font-family: 'Archivo Black'">Links</h4>
+              <hr style="width: 25px; height: 2px; color: #0E153A;">
+            </div>
+            <li class="menu-item">
+              <a href="">Home</a>
+            </li>
+            <li class="menu-item">
+              <a routerLink="about" [ngStyle]="{ color: color}"> About Us</a>
+            </li>
+            <li class="menu-item">
+              <a href="tel:+27725989012" [ngStyle]="{ color: color}" >Call Now</a>
+            </li>
+            <div style="margin-top: 60px; display: flex; flex-wrap: nowrap; justify-content: center;">
+              <hr style="width: 25px; height: 2px; color: #0E153A;">
+              <h4 style="color: #236589; letter-spacing: 1.5px; font-family: 'Archivo Black';">Social Media</h4>
+              <hr style="width: 25px; height: 2px; color: #0E153A;">
+            </div>
+            <div style="display: flex; flex-wrap: nowrap; justify-content: center; margin-top: 0px;">
+              <img src="../../../assets/images/fb.png" height="30px" style="margin: 10px;">
+              <img src="../../../assets/images/tw.png" height="30px" style="margin: 10px;">
+              <a href="https://www.instagram.com/commerce_fields_/"> <img src="../../../assets/images/ig.png" height="30px" style="margin: 10px;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
 </nav>

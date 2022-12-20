@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

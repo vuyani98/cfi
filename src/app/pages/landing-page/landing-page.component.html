@@ -2,13 +2,13 @@
 
   <div class="hero" style="text-align: center; margin-top: 100px;">
     <div class="hero-header">
-      <h1 style="font-family: 'Archivo Black';font-size: 70px"><span style="color: #236589;"> Empowerment through</span><br>
+      <h1 style="font-family: 'Archivo Black'; font-size: 70px"><span style="color: #236589;"> Empowerment through</span><br>
         real estate
       </h1>
     </div>
     <div class="hero-content" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
 
-      <div class="left" style="display: flex; flex-direction:column; justify-content:center; padding: 60px;">
+      <div class="left col-xs-12 col-sm-12 col-md-12 col-lg-4" style="display: flex; flex-direction:column; justify-content:center; padding: 60px;">
         <p style="font-size: 20px; text-align: left;">Seeking to get the best property or the best value from your property ? <br>
         Look no further, get in touch and we will assist you. </p>
         <form action="" id="hero-form">
@@ -17,8 +17,8 @@
         </form>
       </div>
 
-      <div class="right">
-          <img src="../../../assets/images/heroimg.png" alt="" height="480px">
+      <div class="right col-xs-12 col-sm-12 col-md-12 col-lg-7">
+          <img src="../../../assets/images/heroimg.png" alt="" width="100%">
       </div>
 
     </div>
@@ -34,13 +34,13 @@
       <div class="grid-item" style="background: linear-gradient(0deg, rgba(82, 99, 105, 0.4 ),rgba(82, 99, 105, 0.4)), url('../../../assets/images/kitchen.jpg'); background-position: center; background-size: cover;"> <div style="padding-top: 30px;">REAL</div> </div>
       <div class="grid-item" style="background: linear-gradient(0deg, rgba(82, 99, 105, 0.4), rgba(82, 99, 105, 0.4)), url('../../../assets/images/keys.jpg'); background-position: center; background-size: cover;"> <div style="padding-top: 30px;">ESTATE</div> </div>
     </div>
-    <div class="col-lg-7 col-xs-12 col-sm-12 col-md-12" style="display: flex; flex-direction:column; justify-content: end; padding: 10px;">
+    <div class="col-lg-7 col-xs-12 col-sm-12 col-md-12 services" style="display: flex; flex-wrap: wrap; padding: 10px;">
       <h2 style="text-align: left; padding-left: 40px;">Our Services</h2>
       <p style="font-size: 20px; text-align: left; padding-left: 40px;">Our diverse team affords us to expand our services into every
         thing relating to property and construction. Due to skilled and
         experienced personal, we offer the following :
       </p>
-      <carousel  [autoplay]="true" [cellsToShow]="3" [loop]="true" [arrows]="false" [transitionDuration]="150" style="margin-top: 40px; height: 95px">
+      <carousel  [autoplay]="true" [cellsToShow]="3" [loop]="true" [arrows]="false" [transitionDuration]="150" style="margin-top: 40px; height: 95px; z-index: 0;">
         <div class="carousel-cell" *ngFor="let service of services" style="box-shadow: 1px 1px 16px 2px #1e1e1e18; border-radius: 15px; padding: 8px; height: fit-content; width: fit-content;">
           <strong>{{service}}</strong>
         </div>
@@ -52,25 +52,25 @@
 
 <div class="container" style="text-align: center; margin-top: 80px">
   <h2 style="font-weight: bold;">Why Us?</h2>
-  <div class="content" style="display:flex; justify-content: space-between; margin-top: 50px;">
-    <div class="benefit col-3" >
+  <div class="content" style="display:flex;flex-wrap: wrap; justify-content: space-between; margin-top: 30px;">
+    <div class="benefit col-lg-3 col-md-12 col-sm-12 col-xs-12" >
       <div><img src="../../../assets/images/icons8-good-quality-60.png" alt="" height="50px"></div>
       <h4>Quality</h4>
-      <p style="margin-top: 25px !important; text-align: left;">Interdisciplanary collaboration as a path to insight & excellent work</p>
+      <p style="margin-top: 25px; text-align: left;">Interdisciplanary collaboration as a path to insight & excellent work</p>
     </div>
-    <div class="benefit col-3" >
+    <div class="benefit col-lg-3 col-md-12 col-sm-12 col-xs-12" >
       <div><img src="../../../assets/images/icons8-integrity-64.png" alt="" height="50px"></div>
       <h4>Integrity</h4>
-      <p style="margin-top: 25px !important; text-align: center;">We conduct ourselves in the highest ethical standards, demonstrating honesty and fairness in every decision and action</p>
+      <p style="margin-top: 25px; text-align: center;">We conduct ourselves in the highest ethical standards, demonstrating honesty and fairness in every decision and action</p>
     </div>
-    <div class="benefit col-3" >
+    <div class="benefit col-lg-3 col-md-12 col-sm-12 col-xs-12" >
       <div><img src="../../../assets/images/icons8-customer-care-66.png" alt="" height="50px"></div>
       <h4>Courage</h4>
-      <p style="margin-top: 25px !important; text-align: left;">We make decisions and act in the best interests of our clients, even in the face of personal or professional adversity</p>
+      <p style="margin-top: 25px; text-align: left;">We make decisions and act in the best interests of our clients, even in the face of personal or professional adversity</p>
     </div>
   </div>
   <div class="social-proof" style="margin-top: 60px;">
-    <div class="comment" style="display: flex; box-shadow: 1px 1px 10px 1px #1e1e1e25; padding: 15px; justify-content: center; align-items: center; border-radius: 15px;">
+    <div class="comment" style="display: flex; flex-wrap: wrap; box-shadow: 1px 1px 10px 1px #1e1e1e25; padding: 15px; justify-content: center; align-items: center; border-radius: 15px;">
       <div style="background: url('../../../assets/images/human.jpg'); height: 100px; width: 100px; border-radius: 50%; background-position: center; background-size: cover;" ></div>
       <p style="margin-bottom: 0px; padding: 10px; font-style: italic; font-size: larger;">"Commerce Field has great, efficient services and they are quite transparent in their dealings" - <strong>Sam Mpofu</strong> </p>
     </div>
@@ -79,12 +79,12 @@
 
 <div class="contact-form" style="margin-top: 70px;text-align:center; height: fit-content; padding: 30px; color: white; background: linear-gradient(0deg, rgba(82, 99, 105, 0.7), rgba(82, 99, 105, 0.7)), url('../../../assets/images/formimg.jpg'); background-size:cover; background-position: center;">
   <h2>Contact Us</h2>
-  <form action="">
+  <form id="contactus" action="https://formspree.io/f/xnqyavwa" method="post">
     <div class="contact-form-input">
          <input type="text" placeholder="Full Name">
     </div>
     <div class="contact-form-input">
-      <input type="text" placeholder="Email Address">
+      <input type="email" placeholder="Email Address">
     </div>
     <div class="contact-form-input">
       <textarea name="" id="" cols="30" rows="10"></textarea>
